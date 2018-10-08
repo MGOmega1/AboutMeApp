@@ -3,12 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AboutMeApp"
              x:Class="AboutMeApp.MainPage">
-
-    <StackLayout>
+    <ScrollView>
+    <StackLayout BackgroundColor="Gray" Spacing="120">
         <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="Maroon" >
+          <Label
+          Margin="20"
+          Text="About Michael Griffin"
+          HorizontalTextAlignment="Center"
+          FontSize="30"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+        <StackLayout BackgroundColor="Maroon" Margin="25">
+            <Label
+             Margin="10"
+             Text="In this app, we will take a journey and see what makes me the person that I am"
+             FontSize="15"
+             HorizontalTextAlignment="Center"
+             HorizontalOptions="CenterAndExpand"   
+             VerticalOptions="CenterAndExpand"
+             />
+        </StackLayout>
+        <StackLayout>
+            <Button BackgroundColor="Black"
+             Text="Click Here to Begin"
+             HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+        
     </StackLayout>
-
+  </ScrollView>
 </ContentPage>
