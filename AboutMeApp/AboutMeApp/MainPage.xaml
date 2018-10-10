@@ -4,33 +4,67 @@
              xmlns:local="clr-namespace:AboutMeApp"
              x:Class="AboutMeApp.MainPage">
     <ScrollView>
-    <StackLayout BackgroundColor="Gray" Spacing="120">
+    <StackLayout BackgroundColor="Gray" Spacing="60">
         <!-- Place new controls here -->
         <StackLayout BackgroundColor="Maroon" >
           <Label
-          Margin="20"
+          Margin="30"
           Text="About Michael Griffin"
           HorizontalTextAlignment="Center"
           FontSize="30"
           HorizontalOptions="FillAndExpand"
           VerticalOptions="CenterAndExpand" />
         </StackLayout>
-        <StackLayout BackgroundColor="Maroon" Margin="25">
+            <BoxView>
+                
+            </BoxView>
+        <Frame CornerRadius="15" BackgroundColor="Maroon" Margin="25">
             <Label
-             Margin="10"
              Text="In this app, we will take a journey and see what makes me the person that I am"
-             FontSize="15"
+             FontSize="14"
              HorizontalTextAlignment="Center"
              HorizontalOptions="CenterAndExpand"   
              VerticalOptions="CenterAndExpand"
              />
-        </StackLayout>
-        <StackLayout>
-            <Button BackgroundColor="Black"
-             Text="Click Here to Begin"
-             HorizontalOptions="CenterAndExpand"/>
-        </StackLayout>
-        
-    </StackLayout>
+        </Frame>
+
+            <Grid RowSpacing="25">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button 
+             CornerRadius="15"
+             BackgroundColor="Black"
+             Text="About Me"
+             HorizontalOptions="CenterAndExpand"
+             />
+             <Button 
+             Grid.Row="1" Grid.Column="0"
+             CornerRadius="15"
+             BackgroundColor="Black"
+             Text="Skills"
+             HorizontalOptions="CenterAndExpand"
+             />
+             <Button 
+             Grid.Row="0" Grid.Column="1"
+             CornerRadius="15"
+             BackgroundColor="Black"
+             Text="Contact"
+             HorizontalOptions="CenterAndExpand"
+             />
+             <Button 
+             Grid.Row="1" Grid.Column="1"
+             CornerRadius="15"
+             BackgroundColor="Black"
+             Text="Settings"
+             HorizontalOptions="CenterAndExpand"
+             />
+            </Grid>
+      </StackLayout>
   </ScrollView>
 </ContentPage>
