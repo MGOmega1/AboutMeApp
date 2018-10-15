@@ -13,5 +13,10 @@ namespace AboutMeApp
 		{
 			InitializeComponent();
 		}
-	}
+
+        private void aboutMeButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new AboutMePage());
+        }
+    }
 }

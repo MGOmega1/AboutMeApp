@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AboutMeApp.AboutMePage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray" Spacing="40">
+            <StackLayout BackgroundColor="Maroon">
+                <Label
+                Margin="30"
+                Text="About Michael Griffin"
+                HorizontalTextAlignment="Center"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand" />
+           </StackLayout>
+            <Frame BackgroundColor= "Maroon" Margin="30" CornerRadius="15">
+                <Label
+                   Text="So, What am I all about? Below you will find the answer!" 
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    VerticalOptions="CenterAndExpand"
+                />
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
