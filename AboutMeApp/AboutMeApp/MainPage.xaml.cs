@@ -18,5 +18,10 @@ namespace AboutMeApp
         {
             Navigation.PushAsync(new AboutMePage());
         }
+
+        private void skillsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SkillsPage());
+        }
     }
 }

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AboutMeApp.AboutMePage">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Gray" Spacing="40">
+        <ScrollView>
+        <StackLayout BackgroundColor="Gray" Spacing="30">
             <StackLayout BackgroundColor="Maroon">
                 <Label
                 Margin="30"
@@ -13,7 +14,7 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand" />
            </StackLayout>
-            <Frame BackgroundColor= "Maroon" Margin="30" CornerRadius="15">
+            <Frame BackgroundColor= "Maroon" Margin="25" CornerRadius="15">
                 <Label
                    Text="So, What am I all about? Below you will find the answer!" 
                     HorizontalTextAlignment="Center"
@@ -21,7 +22,18 @@
                     VerticalOptions="CenterAndExpand"
                 />
             </Frame>
-
+            <Frame BackgroundColor="Black" Margin="50" CornerRadius="90">
+                <Label
+                Text="I am a student of Pittsburg State University who is about to graduate this upcoming December. 
+                    Some of my hobbies include playing video games, drawing, playing basketball, hanging out with friends, and spending time with family.
+                    I will have a degree in computer information systems and have a job lined up for January of next year working for UPS's air group division doing software development."
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                VerticalOptions="CenterAndExpand"
+                    
+                />
+            </Frame>
         </StackLayout>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>

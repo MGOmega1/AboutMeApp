@@ -51,6 +51,8 @@
              BackgroundColor="Black"
              Text="Skills"
              HorizontalOptions="CenterAndExpand"
+             x:Name="skillsButton"
+             Clicked="skillsButton_Clicked"
              />
              <Button 
              Grid.Row="0" Grid.Column="1"

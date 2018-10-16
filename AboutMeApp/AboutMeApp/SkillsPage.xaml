@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AboutMeApp.SkillsPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Gray" Spacing="40">
+            <StackLayout BackgroundColor="Maroon" >
+                <Label
+                Margin="30"
+                Text="About Michael Griffin"
+                HorizontalTextAlignment="Center"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame BackgroundColor="Maroon" Margin="30" CornerRadius="20">
+                <Label
+                Text="I have many skills that I am proud to share! Below you'll find just a few out of many!"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                />
+            </Frame>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="Black" CornerRadius="100"/>
+                <Frame BackgroundColor="Maroon" CornerRadius="20">
+                    <Label 
+                    Text="These are the skills that I have"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="Maroon" CornerRadius="100"/>
+                <Frame BackgroundColor="Black" CornerRadius="20">
+                    <Label 
+                    Text="These are the skills that I have"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    />
+                </Frame>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Frame BackgroundColor="Black" CornerRadius="100"/>
+                <Frame BackgroundColor="Maroon" CornerRadius="20">
+                    <Label 
+                    Text="These are the skills that I have"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    />
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
