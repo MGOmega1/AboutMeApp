@@ -4,23 +4,28 @@
              xmlns:local="clr-namespace:AboutMeApp"
              x:Class="AboutMeApp.MainPage">
     <ScrollView>
-    <StackLayout BackgroundColor="Gray" Spacing="50">
+    <StackLayout BackgroundColor="Gray" Spacing="40">
         <!-- Place new controls here -->
         <StackLayout BackgroundColor="Maroon" >
           <Label
           Margin="30"
           Text="About Michael Griffin"
+          TextColor="White"
           HorizontalTextAlignment="Center"
           FontSize="30"
           HorizontalOptions="FillAndExpand"
           VerticalOptions="CenterAndExpand" />
         </StackLayout>
-            <BoxView>
-                
-            </BoxView>
-        <Frame CornerRadius="15" BackgroundColor="Maroon" Margin="25">
+            <StackLayout>
+                <Image Source="https://res.cloudinary.com/teepublic/image/private/s--0DBUkyZL--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1518466710/production/designs/2359568_0.jpg"
+                       WidthRequest="110"
+                       HeightRequest="110"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Frame CornerRadius="15" BackgroundColor="Maroon" Margin="25">
             <Label
              Text="In this app, we will take a journey and see what makes me the person that I am"
+             TextColor="White"
              FontSize="14"
              HorizontalTextAlignment="Center"
              HorizontalOptions="CenterAndExpand"   
@@ -41,6 +46,7 @@
              CornerRadius="15"
              BackgroundColor="Black"
              Text="About Me"
+             TextColor="White"
              HorizontalOptions="CenterAndExpand"
              x:Name="aboutMeButton"
            Clicked="aboutMeButton_Clicked"
@@ -50,6 +56,7 @@
              CornerRadius="15"
              BackgroundColor="Black"
              Text="Skills"
+             TextColor="White"
              HorizontalOptions="CenterAndExpand"
              x:Name="skillsButton"
              Clicked="skillsButton_Clicked"
@@ -59,6 +66,7 @@
              CornerRadius="15"
              BackgroundColor="Black"
              Text="Contact"
+             TextColor="White"
              HorizontalOptions="CenterAndExpand"
              />
              <Button 
@@ -66,6 +74,7 @@
              CornerRadius="15"
              BackgroundColor="Black"
              Text="Settings"
+             TextColor="White"
              HorizontalOptions="CenterAndExpand"
              />
             </Grid>

@@ -8,6 +8,7 @@
                 <Label
                 Margin="30"
                 Text="About Michael Griffin"
+                TextColor="White"
                 HorizontalTextAlignment="Center"
                 FontSize="30"
                 HorizontalOptions="FillAndExpand"
@@ -16,36 +17,40 @@
             <Frame BackgroundColor="Maroon" Margin="30" CornerRadius="20">
                 <Label
                 Text="I have many skills that I am proud to share! Below you'll find just a few out of many!"
+                TextColor="White"
                 VerticalTextAlignment="Center"
                 HorizontalTextAlignment="Center"
                 HorizontalOptions="CenterAndExpand"
                 />
             </Frame>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Black" CornerRadius="100"/>
+                <Frame BackgroundColor="Black" CornerRadius="100" WidthRequest="20"/>
                 <Frame BackgroundColor="Maroon" CornerRadius="20">
                     <Label 
                     Text="These are the skills that I have"
+                    TextColor="White"
                     HorizontalTextAlignment="Center"
                     VerticalTextAlignment="Center"
                     />
                 </Frame>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Maroon" CornerRadius="100"/>
+                <Frame BackgroundColor="Maroon" CornerRadius="100" WidthRequest="20"/>
                 <Frame BackgroundColor="Black" CornerRadius="20">
                     <Label 
                     Text="These are the skills that I have"
+                    TextColor="White"
                     HorizontalTextAlignment="Center"
                     VerticalTextAlignment="Center"
                     />
                 </Frame>
             </StackLayout>
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Black" CornerRadius="100"/>
+                <Frame BackgroundColor="Black" CornerRadius="100" WidthRequest="20"/>
                 <Frame BackgroundColor="Maroon" CornerRadius="20">
                     <Label 
                     Text="These are the skills that I have"
+                    TextColor="White"
                     HorizontalTextAlignment="Center"
                     VerticalTextAlignment="Center"
                     />

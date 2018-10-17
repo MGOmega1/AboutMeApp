@@ -9,6 +9,7 @@
                 <Label
                 Margin="30"
                 Text="About Michael Griffin"
+                TextColor="White"
                 HorizontalTextAlignment="Center"
                 FontSize="30"
                 HorizontalOptions="FillAndExpand"
@@ -16,7 +17,8 @@
            </StackLayout>
             <Frame BackgroundColor= "Maroon" Margin="25" CornerRadius="15">
                 <Label
-                   Text="So, What am I all about? Below you will find the answer!" 
+                   Text="So, What am I all about? Below you will find the answer!"
+                   TextColor="White"
                     HorizontalTextAlignment="Center"
                     VerticalTextAlignment="Center"
                     VerticalOptions="CenterAndExpand"
@@ -24,9 +26,8 @@
             </Frame>
             <Frame BackgroundColor="Black" Margin="50" CornerRadius="90">
                 <Label
-                Text="I am a student of Pittsburg State University who is about to graduate this upcoming December. 
-                    Some of my hobbies include playing video games, drawing, playing basketball, hanging out with friends, and spending time with family.
-                    I will have a degree in computer information systems and have a job lined up for January of next year working for UPS's air group division doing software development."
+                Text="I am a student of Pittsburg State University who is about to graduate this upcoming December. Some of my hobbies include playing video games, drawing, playing basketball, hanging out with friends, and spending time with family. I will have a degree in computer information systems and have a job lined up for January of next year working for UPS's air group division doing software development."
+                TextColor="White"
                 HorizontalTextAlignment="Center"
                 VerticalTextAlignment="Center"
                 VerticalOptions="CenterAndExpand"
