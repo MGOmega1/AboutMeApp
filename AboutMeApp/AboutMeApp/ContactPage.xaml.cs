@@ -16,5 +16,20 @@ namespace AboutMeApp
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void phoneButton_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("tel:8168137117"));
+        }
+
+        private void mailButton_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("mailto:mgriff15@me.com"));
+        }
+
+        private void linkedInButton_Clicked(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://www.linkedin.com/in/michael-griffin-b65063b6/"));
+        }
+    }
 }

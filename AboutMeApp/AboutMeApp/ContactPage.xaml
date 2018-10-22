@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AboutMeApp.ContactPage">
+             x:Class="AboutMeApp.ContactPage"
+             Title="Contact Me">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Gray" Spacing="40">
             <StackLayout BackgroundColor="Maroon" >
@@ -37,15 +38,47 @@
                 <Image Source="https://png.icons8.com/ios/50/000000/phone-filled.png"/>
                 <Image Grid.Row="1" Grid.Column="0" Source="https://png.icons8.com/metro/50/000000/new-post.png"/>
                 <Image Grid.Row="2" Grid.Column="0" Source="https://png.icons8.com/ios/50/000000/linkedin-filled.png"/>
-                <Frame Grid.Row="0" Grid.Column="1" CornerRadius="15" Margin="15" BackgroundColor="Maroon">
-                    <Label
-                       TextColor="White"
-                       Text="816-813-7117"
-                       HorizontalTextAlignment="Center"
-                       VerticalTextAlignment="Center"
-                       HorizontalOptions="CenterAndExpand"
-                     />
-                </Frame>
+                <Button 
+                    Grid.Row="0" Grid.Column="1" 
+                    CornerRadius="15" 
+                    Margin="15" 
+                    BackgroundColor="Maroon"
+                    TextColor="White"
+                    Text="816-813-7117"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="phoneButton"
+                    Clicked="phoneButton_Clicked"
+                    >
+                </Button>
+                <Button
+                    Grid.Row="1" Grid.Column="1"
+                    CornerRadius="15"
+                    Margin="15"
+                    BackgroundColor="Maroon"
+                    TextColor="White"
+                    Text="mgriff15@me.com"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="mailButton"
+                    Clicked="mailButton_Clicked"
+                >
+                </Button>
+                <Button
+                    Grid.Row="2" Grid.Column="1"
+                    CornerRadius="15"
+                    Margin="15"
+                    BackgroundColor="Maroon"
+                    TextColor="White"
+                    Text="My LinkedIn Page"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    x:Name="linkedInButton"
+                    Clicked="linkedInButton_Clicked"
+                  
+                >
+                    
+                </Button>
             </Grid>
         </StackLayout>
     </ContentPage.Content>

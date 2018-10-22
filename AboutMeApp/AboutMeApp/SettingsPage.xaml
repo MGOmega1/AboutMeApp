@@ -1,12 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AboutMeApp.SettingsPage">
+             x:Class="AboutMeApp.SettingsPage"
+             Title="Settings">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="Gray" Spacing="40">
+            <StackLayout BackgroundColor="Maroon" >
+                <Label
+                Margin="30"
+                Text="About Michael Griffin"
+                TextColor="White"
+                HorizontalTextAlignment="Center"
+                FontSize="30"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <Frame BackgroundColor="Maroon" Margin="30" CornerRadius="20">
+                <Label
+                Text="This is where the settings options will go. This page will have features to modify soon so stay tuned!"
+                TextColor="White"
+                VerticalTextAlignment="Center"
+                HorizontalTextAlignment="Center"
+                HorizontalOptions="CenterAndExpand"
+                />
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

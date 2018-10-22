@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AboutMeApp.AboutMePage">
+             x:Class="AboutMeApp.AboutMePage"
+             Title="About Me">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout BackgroundColor="Gray" Spacing="30">
@@ -15,6 +16,12 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand" />
            </StackLayout>
+                <StackLayout>
+                    <Image
+                        Source="Profile.jpg"
+                        WidthRequest="200"
+                    />
+                </StackLayout>
             <Frame BackgroundColor= "Maroon" Margin="25" CornerRadius="15">
                 <Label
                    Text="So, What am I all about? Below you will find the answer!"
