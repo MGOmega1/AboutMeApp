@@ -31,7 +31,7 @@
              HorizontalOptions="CenterAndExpand"   
              VerticalOptions="CenterAndExpand"
              />
-        </Frame>
+            </Frame>
 
             <Grid RowSpacing="25">
                 <Grid.RowDefinitions>
@@ -49,7 +49,7 @@
              TextColor="White"
              HorizontalOptions="CenterAndExpand"
              x:Name="aboutMeButton"
-           Clicked="aboutMeButton_Clicked"
+             Clicked="aboutMeButton_Clicked"
              />
              <Button 
              Grid.Row="1" Grid.Column="0"
@@ -67,6 +67,8 @@
              BackgroundColor="Black"
              Text="Contact"
              TextColor="White"
+             x:Name="contactButton"
+             Clicked="contactButton_Clicked"
              HorizontalOptions="CenterAndExpand"
              />
              <Button 
@@ -75,6 +77,8 @@
              BackgroundColor="Black"
              Text="Settings"
              TextColor="White"
+             x:Name="settingsButton"
+             Clicked="settingsButton_Clicked"
              HorizontalOptions="CenterAndExpand"
              />
             </Grid>

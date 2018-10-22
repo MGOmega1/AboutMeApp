@@ -23,5 +23,15 @@ namespace AboutMeApp
         {
             Navigation.PushAsync(new SkillsPage());
         }
+
+        private void contactButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ContactPage());
+        }
+
+        private void settingsButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SettingsPage());
+        }
     }
 }
