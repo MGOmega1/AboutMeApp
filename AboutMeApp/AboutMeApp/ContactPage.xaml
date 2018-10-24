@@ -4,6 +4,7 @@
              x:Class="AboutMeApp.ContactPage"
              Title="Contact Me">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout BackgroundColor="Gray" Spacing="40">
             <StackLayout BackgroundColor="Maroon" >
             <Label
@@ -80,6 +81,20 @@
                     
                 </Button>
             </Grid>
-        </StackLayout>
+                <StackLayout Padding="20" Spacing="20">
+                    <Entry x:Name="nameEntry" Placeholder="Name" TextColor="White"/>
+                    <Entry x:Name="emailEntry" Placeholder="Email" TextColor="White"/>
+                    <Label Text="Enter Your Message Here" TextColor="White"/>
+                    <Editor x:Name="messageEditor" 
+                        HeightRequest="100" 
+                        TextColor="White"/>
+                    <Button BackgroundColor="Maroon"
+                            Text="Submit"
+                            TextColor="White"
+                            HorizontalOptions="CenterAndExpand"
+                            Clicked="Button_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

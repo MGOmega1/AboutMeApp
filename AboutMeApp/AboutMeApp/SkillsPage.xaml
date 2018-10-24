@@ -4,7 +4,8 @@
              x:Class="AboutMeApp.SkillsPage"
              Title="Skills">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Gray" Spacing="40">
+        <ScrollView>
+        <StackLayout BackgroundColor="Gray" Padding="20" Spacing="40">
             <StackLayout BackgroundColor="Maroon" >
                 <Label
                 Margin="30"
@@ -15,48 +16,11 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand" />
             </StackLayout>
-            <Frame BackgroundColor="Maroon" Margin="30" CornerRadius="20">
-                <Label
-                Text="I have many skills that I am proud to share! Below you'll find just a few out of many!"
-                TextColor="White"
-                VerticalTextAlignment="Center"
-                HorizontalTextAlignment="Center"
-                HorizontalOptions="CenterAndExpand"
-                />
-            </Frame>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Black" CornerRadius="100" WidthRequest="20"/>
-                <Frame BackgroundColor="Maroon" CornerRadius="20">
-                    <Label 
-                    Text="These are the skills that I have"
-                    TextColor="White"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    />
-                </Frame>
+             <Entry Placeholder="Enter Skill Here " x:Name="skillAdd" /> 
+             <Button BackgroundColor="Black" Text="Add Skill" TextColor="White" Clicked="Button_Clicked" />
+             <ListView x:Name ="skillsListView" BackgroundColor="Maroon"/>
+                
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Maroon" CornerRadius="100" WidthRequest="20"/>
-                <Frame BackgroundColor="Black" CornerRadius="20">
-                    <Label 
-                    Text="These are the skills that I have"
-                    TextColor="White"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    />
-                </Frame>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                <Frame BackgroundColor="Black" CornerRadius="100" WidthRequest="20"/>
-                <Frame BackgroundColor="Maroon" CornerRadius="20">
-                    <Label 
-                    Text="These are the skills that I have"
-                    TextColor="White"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    />
-                </Frame>
-            </StackLayout>
-        </StackLayout>
+      </ScrollView>
     </ContentPage.Content>
 </ContentPage>
