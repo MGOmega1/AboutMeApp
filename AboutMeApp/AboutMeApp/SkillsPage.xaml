@@ -6,8 +6,8 @@
     <ContentPage.Content>
         <ScrollView>
         <StackLayout BackgroundColor="Gray" Padding="20" Spacing="40">
-            <StackLayout BackgroundColor="Maroon" >
-                <Label
+                <StackLayout BackgroundColor="Maroon" >
+                    <Label
                 Margin="30"
                 Text="About Michael Griffin"
                 TextColor="White"
@@ -16,10 +16,41 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand" />
             </StackLayout>
-             <Entry Placeholder="Enter Skill Here " x:Name="skillAdd" /> 
-             <Button BackgroundColor="Black" Text="Add Skill" TextColor="White" Clicked="Button_Clicked" />
-             <ListView x:Name ="skillsListView" BackgroundColor="Maroon"/>
-                
+                <ListView x:Name ="skillsListView" HasUnevenRows="true">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                       
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Frame Grid.Row="0" Grid.Column="0" BackgroundColor="Maroon" CornerRadius="70" Margin="15">
+                                        <Image
+                                               Source="{Binding icon}"/>
+                                    </Frame>
+                                    <Frame Grid.Row="0" Grid.Column="1" BackgroundColor="Black" CornerRadius="15" Margin="15">
+                                        <Label Text="{Binding name}" 
+                                               TextColor="White" 
+                                               HorizontalTextAlignment="Center"
+                                               HorizontalOptions="CenterAndExpand"/>
+                                    </Frame>
+                                    <Frame Grid.Row="0" Grid.Column="2" BackgroundColor="Maroon" CornerRadius="15" Margin="15">
+                                        <Label Text="{Binding description}" 
+                                               TextColor="White"
+                                               HorizontalTextAlignment="Center"
+                                               HorizontalOptions="CenterAndExpand"/>
+                                    </Frame>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
             </StackLayout>
       </ScrollView>
     </ContentPage.Content>
