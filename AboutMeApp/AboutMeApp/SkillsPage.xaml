@@ -16,7 +16,7 @@
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="CenterAndExpand" />
             </StackLayout>
-                <ListView x:Name ="skillsListView" HasUnevenRows="true">
+                <ListView x:Name ="skillsListView" ItemSelected="skillsListView_ItemSelected" HasUnevenRows="true">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
